@@ -30,7 +30,7 @@
   --color-text-soft: var(--text-soft);
   --color-white: var(--white);
   --font-sans: var(--font-montserrat);
-  --font-heading: var(--font-montserrat);
+  --font-heading: var(--font-inter);
   --font-mono: var(--font-jetbrains);
 }
 
