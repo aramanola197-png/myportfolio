@@ -1,12 +1,18 @@
 import fs from "fs";
 import path from "path";
 
-export type GraphicsCategory = "altiq-ai" | "chainlift" | "aethreon-iq" | "others";
+export type GraphicsCategory =
+  | "altiq-ai"
+  | "chainlift"
+  | "aethreon-iq"
+  | "axiom-cloud"
+  | "others";
 
 export const GRAPHICS_CATEGORIES: { id: GraphicsCategory; title: string }[] = [
   { id: "altiq-ai", title: "ALTIQ AI" },
   { id: "chainlift", title: "CHAINLIFT" },
   { id: "aethreon-iq", title: "AETHREON IQ" },
+  { id: "axiom-cloud", title: "AXIOM CLOUD" },
   { id: "others", title: "OTHERS" },
 ];
 

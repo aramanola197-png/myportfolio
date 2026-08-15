@@ -1,7 +1,7 @@
 import { getAllGraphics } from "@/lib/graphics";
 import { GlassFrame } from "@/components/GlassFrame";
 import { Button } from "@/components/Button";
-import Link from "next/link";
+import { GraphicsNavigator } from "@/components/GraphicsNavigator";
 
 export const dynamic = "force-dynamic";
 
@@ -11,6 +11,7 @@ export default function GraphicsPage() {
   return (
     <div className="pt-28 pb-24 px-5 sm:px-8">
       <div className="mx-auto max-w-6xl">
+        {/* Header */}
         <p className="mono text-[11px] tracking-[0.2em] text-[#6b6b6b] uppercase mb-4">
           Graphics Portfolio
         </p>
@@ -22,12 +23,20 @@ export default function GraphicsPage() {
           Each piece sits inside its own frame. Drop new work into the category folders and it appears here automatically.
         </p>
 
+        {/* Categories */}
         {categories.map((cat) => (
-          <section key={cat.id} className="mb-24">
+          <section
+            key={cat.id}
+            id={cat.id}
+            className="mb-24 scroll-mt-28"
+          >
             <div className="flex items-baseline gap-4 mb-10">
-              <h2 className="heading text-2xl sm:text-3xl text-[#f5f5f5]">{cat.title}</h2>
+              <h2 className="heading text-2xl sm:text-3xl text-[#f5f5f5]">
+                {cat.title}
+              </h2>
               <span className="mono text-[11px] text-[#6b6b6b]">
-                {cat.images.length} {cat.images.length === 1 ? "piece" : "pieces"}
+                {cat.images.length}{" "}
+                {cat.images.length === 1 ? "piece" : "pieces"}
               </span>
             </div>
 
@@ -54,16 +63,21 @@ export default function GraphicsPage() {
         {/* Closing CTA */}
         <section className="mt-32 pt-16 border-t border-white/5 text-center">
           <h2 className="heading text-2xl sm:text-3xl text-[#f5f5f5] mb-6 max-w-2xl mx-auto leading-tight">
-            These are only fragments of what happens when an idea meets the right creative process.
+            These are only fragments of what happens when an idea meets the right
+            creative process.
           </h2>
           <p className="text-[#b0b0b0] mb-10 max-w-lg mx-auto">
-            The work shown here is a selection. If you have something that needs to be designed with the same care, the next step is a conversation.
+            The work shown here is a selection. If you have something that needs
+            to be designed with the same care, the next step is a conversation.
           </p>
           <Button href="/#contact" variant="primary">
             Discuss a project
           </Button>
         </section>
       </div>
+
+      {/* Floating expandable navigator */}
+      <GraphicsNavigator categories={categories} />
     </div>
   );
 }
