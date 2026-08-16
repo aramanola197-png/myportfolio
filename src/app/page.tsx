@@ -162,8 +162,7 @@ export default function HomePage() {
           <p className="mono text-[11px] tracking-[0.2em] text-[#6b6b6b] uppercase mb-4 text-center">Contact</p>
           <h2 className="heading text-3xl sm:text-4xl text-[#f5f5f5] mb-6 text-center leading-tight">Reach out directly.</h2>
           <p className="text-center text-[#8a8a8a] text-sm mb-14 max-w-md mx-auto">
-            Choose a channel. No usernames exposed — just branded, direct links.
-          </p>
+            Have an idea, a project, or an opportunity in mind? Let’s turn it into something real. Reach out, and let’s build something worth talking about.       </p>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {/* X */}
