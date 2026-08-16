@@ -19,8 +19,8 @@ export default function GraphicsPage() {
           AI Graphics Design
         </h1>
         <p className="text-[#b0b0b0] max-w-2xl mb-16 leading-relaxed">
-          Logos, brand identities, posters, banners, promotional graphics and visual concepts.
-          Each piece sits inside its own frame. Drop new work into the category folders and it appears here automatically.
+          A collection of visual work I’ve created across branding, product launches, campaigns, and digital storytelling. 
+          Each piece is crafted to communicate an idea clearly while giving every project a distinct visual identity and character.
         </p>
 
         {/* Categories */}
