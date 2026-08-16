@@ -16,8 +16,7 @@ export default function WebsitesPage() {
           Website & Software
         </h1>
         <p className="text-[#b0b0b0] max-w-2xl mb-20 leading-relaxed">
-          Fully functional products and portfolio sites. Each card presents the live work with a description of what was built.
-        </p>
+          Selected digital products and platforms I’ve designed, built, and brought to life. Each project reflects a different challenge, turning ideas into thoughtful, functional experiences with purpose, character, and a clear focus on the people they’re built for.        </p>
 
         <div className="space-y-16">
           {mainProjects.map((project) => (
